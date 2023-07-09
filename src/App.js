@@ -1,7 +1,7 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import "./App.css";
 import "./styles/index.scss";
-import AppState from "./context-api/State";
+import AppState from "./context-api/AppState";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";

@@ -23,7 +23,9 @@ const Navbar = () => {
         justifyContent={"space-between"}
         background={"#FFFFFF"}
       >
-        <Image width={"48px"} p={1} src={Logo} alt="big-foot" />
+        <NavLink to="/">
+          <Image width={"48px"} p={1} src={Logo} alt="big-foot" />
+        </NavLink>
         <Box
           display={"flex"}
           alignItems={"center"}
@@ -37,6 +39,12 @@ const Navbar = () => {
           >
             Home
           </NavLink>
+          <NavLink to="about"
+            color={"#000000"} _hover={{ color: "#26283E", borderBottom: "2px solid black" }}
+            cursor={"pointer"}
+          >
+            About Us
+          </NavLink>
           <NavLink to="reducecf"
             color={"#000000"} _hover={{ color: "#26283E", borderBottom: "2px solid black" }}
             cursor={"pointer"}
@@ -48,12 +56,6 @@ const Navbar = () => {
             cursor={"pointer"}
           >
             Donate
-          </NavLink>
-          <NavLink to="about"
-            color={"#000000"} _hover={{ color: "#26283E", borderBottom: "2px solid black" }}
-            cursor={"pointer"}
-          >
-            About Us
           </NavLink>
           <NavLink to="contact"
             color={"#000000"} _hover={{ color: "#26283E", borderBottom: "2px solid black" }}
