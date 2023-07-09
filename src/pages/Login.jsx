@@ -1,9 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../styles/Calculator.scss";
 import { Box, Text, Button } from "@chakra-ui/react";
-import { NavLink } from 'react-router-dom'
+import { NavLink } from "react-router-dom";
+import appContext from "../context-api/appContext";
+import showAlert from "../utils/showAlert";
+import { LoginUser } from "../api/userService";
 
 const Login = () => {
+  const { user, setUser } = useContext(appContext);
+
+  const handleLogin = async () => {
+    console.log(user);
+    if (user.email == "" || user.password == "") console.log("Empty Fields");
+    else {
+      const res = LoginUser(user);
+      console.log("Login successful");
+    }
+  };
+
   return (
     <Box
       display={"flex"}
@@ -19,25 +33,41 @@ const Login = () => {
     >
       <Box w={"100%"} display={"flex"} flexDirection={"column"} gap={7}>
         <div className="input-group">
-          <input type="text" name="name" id="name" placeholder=" " />
+          <input
+            type="text"
+            name="email"
+            id="email"
+            placeholder=" "
+            onChange={(e) => setUser({ email: e.target.value })}
+          />
           <label htmlFor="text1">Email</label>
         </div>
         <div className="input-group">
-          <input type="text" name="email" id="email" placeholder=" " />
+          <input
+            type="text"
+            name="password"
+            id="password"
+            placeholder=" "
+            onChange={(e) => setUser({ email: e.target.value })}
+          />
           <label htmlFor="text1">Password</label>
         </div>
       </Box>
-      <Box display={"flex"} alignItems={"center"} gap={2} justifyContent={"start"}>
+      <Box
+        display={"flex"}
+        alignItems={"center"}
+        gap={2}
+        justifyContent={"start"}
+      >
         <Button
           bgColor={"#06B5A3"}
           color={"#FFFFFF"}
           _hover={{ bgColor: "#31DEC1" }}
+          onClick={handleLogin}
         >
           Log in
         </Button>
-        <Text>
-          Don't have a account?
-        </Text>
+        <Text>Don't have a account?</Text>
         <NavLink to="/signup">Sign Up</NavLink>
       </Box>
     </Box>
