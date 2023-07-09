@@ -8,6 +8,7 @@ const Footer = () => {
   return (
     <Box
       display={"flex"}
+      flexDirection={{base:"column-reverse", md:"row"}}
       bgColor={"#FBFADC"}
       p={3}
       justifyContent={"space-between"}

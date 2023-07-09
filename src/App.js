@@ -5,6 +5,7 @@ import AppState from "./context-api/State";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Slider from "./components/Slider";
+import Calculator from "./components/Calculator";
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <AppState>
         <ChakraProvider>
         <Navbar/>
-         <Slider/>         
+        <Slider/> 
+        <Calculator/>        
         <Footer/>
         </ChakraProvider>
       </AppState>
