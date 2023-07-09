@@ -9,6 +9,7 @@ import HomePage from "./pages/Homepage";
 import Profile from "./pages/Profile";
 import Contact from "./pages/Contact";
 import ReduceCarbonFootprint from "./pages/ReduceCarbonFootprint";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
               <Route index path="" element={<HomePage />} />
               <Route index path="profile" element={<Profile />} />
               <Route index path="contact" element={<Contact />} />
-              <Route index path="reducecf" element={<ReduceCarbonFootprint/>} />
+              {/* <Route index path="reducecf" element={<ReduceCarbonFootprint/>} /> */}
+              <Route index path="login" element={<Login/>} />
             </Routes>
             {/* <Footer /> */}
           </BrowserRouter>

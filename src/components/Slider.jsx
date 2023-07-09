@@ -1,5 +1,5 @@
 import React from "react";
-import img_1 from "../assets/img_1.jpg";
+import img_1 from "../assets/Homepage.png";
 import { Box, Image, Text } from "@chakra-ui/react";
 
 const Slider = () => {
@@ -8,10 +8,10 @@ const Slider = () => {
       <Box>
         <Image width={"650px"} p={1} src={img_1} alt="big-foot" />
       </Box>
-      <Box p={3}>
+      <Box p={3} mt={7}>
         <Text
           color={"#000000"}
-          fontSize={"38px"}
+          fontSize={"30px"}
           fontStyle={"normal"}
           fontWeight={"500"}
         >

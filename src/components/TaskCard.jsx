@@ -22,7 +22,7 @@ const TaskCard = ({data}) => {
           }
           <Box display={'flex'} flexDirection={'column'} mt="6" spacing="3">
             <Heading size="md">{data.title}</Heading>
-            <Text>ll</Text>
+            <Text>{data.description}</Text>
           </Box>
         </CardBody>
         <Divider />
