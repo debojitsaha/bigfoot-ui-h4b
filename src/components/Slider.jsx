@@ -1,12 +1,12 @@
 import React from "react";
 import img_1 from "../assets/img_1.jpg";
-import { Box, Image, Img, Text } from "@chakra-ui/react";
+import { Box, Image, Text } from "@chakra-ui/react";
 
 const Slider = () => {
   return (
     <Box display={"flex"} >
       <Box>
-      <Image width={"650px"} p={1} src={img_1} alt="big-foot"/>
+        <Image width={"650px"} p={1} src={img_1} alt="big-foot" />
       </Box>
       <Box p={3}>
         <Text
@@ -14,7 +14,6 @@ const Slider = () => {
           fontSize={"38px"}
           fontStyle={"normal"}
           fontWeight={"500"}
-          lineHeight={"normal"}
         >
           Welcome To
         </Text>
@@ -22,8 +21,7 @@ const Slider = () => {
           color={"#06B5A3"}
           fontSize={"50px"}
           fontStyle={"normal"}
-          fontWeight={"500"}
-          lineHeight={"normal"}
+          fontWeight={"500"}          
         >
           Big Foot
         </Text>
@@ -31,8 +29,7 @@ const Slider = () => {
           color={"#000000"}
           fontSize={"13px"}
           fontStyle={"normal"}
-          fontWeight={"500"}
-          lineHeight={"normal"}
+          fontWeight={"500"}          
           display={"flex"}
           width={"386px"}
           flexDirection={"column"}

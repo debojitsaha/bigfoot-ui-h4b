@@ -1,24 +1,28 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import "./App.css";
 import "./styles/index.scss";
-import AppState from "./context-api/State";
+import AppState from "./context-api/AppState";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Slider from "./components/Slider";
-import Calculator from "./components/Calculator";
-import AboutUs from "./components/AboutUs";
-// import Contributors from "./components/Contributors";
+import HomePage from "./pages/Homepage";
+import Profile from "./pages/Profile";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
     <>
       <AppState>
         <ChakraProvider>
-        <Navbar/>
-        <Slider/> 
-        <Calculator/>
-        <AboutUs/>      
-        <Footer/>
+          <BrowserRouter>
+            <Navbar />
+            <Routes>
+              <Route index path="" element={<HomePage />} />
+              <Route index path="profile" element={<Profile />} />
+              <Route index path="contact" element={<Contact />} />
+            </Routes>
+            {/* <Footer /> */}
+          </BrowserRouter>
         </ChakraProvider>
       </AppState>
     </>
