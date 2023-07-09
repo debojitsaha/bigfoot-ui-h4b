@@ -12,7 +12,6 @@ import cardData from "../data/cardData.json"
 import TaskCard from "../components/TaskCard"
 
 const ReduceCarbonFootprint = () => {
-    console.log(cardData);
   return (
     <>
       <Box>
@@ -25,12 +24,14 @@ const ReduceCarbonFootprint = () => {
         >
           TASKS
         </Text>
-        {cardData.map((data)=>{
-            return <TaskCard data={data}/>
+        <Box display={'flex'} flexWrap={'wrap'} gap={4} mb={8} px={4} justifyContent={'center'}>
+        {cardData.map((data,i)=>{
+            return <TaskCard data={data} key={i}/>
         })}
+        </Box>
       </Box>
       <Box>
-        <Accordion defaultIndex={[0]} allowMultiple>
+        <Accordion defaultIndex={[0]} allowMultiple fontWeight={500}>
           <AccordionItem>
             <h2>
               <AccordionButton>
