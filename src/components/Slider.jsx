@@ -1,6 +1,6 @@
 import React from "react";
 import img_1 from "../assets/img_1.jpg";
-import { Box, Image, Img, Text } from "@chakra-ui/react";
+import { Box, Image, Text } from "@chakra-ui/react";
 
 const Slider = () => {
   return (
