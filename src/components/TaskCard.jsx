@@ -3,7 +3,7 @@ import Badge_1 from "../assets/Badge_1.png";
 import { Text, Box, Card, CardHeader, CardBody, CardFooter, Avatar, Divider, Heading, ButtonGroup, Button } from '@chakra-ui/react'
 
 const TaskCard = ({ data }) => {
-  console.log(data);
+  // console.log(data);
   return (
     <Box p={3}>
       <Card maxW="sm" boxShadow={"0px 0px 8px 0px rgba(0, 0, 0, 0.25)"}>

@@ -22,7 +22,7 @@ function App() {
               <Route index path="" element={<HomePage />} />
               <Route index path="profile" element={<Profile />} />
               <Route index path="contact" element={<Contact />} />
-              {/* <Route index path="reducecf" element={<ReduceCarbonFootprint/>} /> */}
+              <Route index path="reducecf" element={<ReduceCarbonFootprint/>} />
               <Route index path="login" element={<Login/>} />
             </Routes>
             {/* <Footer /> */}
