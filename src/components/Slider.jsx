@@ -4,11 +4,11 @@ import { Box, Image, Text } from "@chakra-ui/react";
 
 const Slider = () => {
   return (
-    <Box display={"flex"} >
+    <Box display={"flex"} gap={4} >
       <Box>
         <Image width={"650px"} p={1} src={img_1} alt="big-foot" />
       </Box>
-      <Box p={3} mt={7}>
+      <Box p={3} mt={8}>
         <Text
           color={"#000000"}
           fontSize={"30px"}
