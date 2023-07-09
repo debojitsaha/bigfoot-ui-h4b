@@ -30,7 +30,7 @@ const ReduceCarbonFootprint = () => {
         })}
         </Box>
       </Box>
-      <Box>
+      <Box pb={4}>
         <Accordion defaultIndex={[0]} allowMultiple fontWeight={500}>
           <AccordionItem>
             <h2>

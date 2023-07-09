@@ -4,7 +4,7 @@ import Logo from "../assets/logo_with_name.png";
 
 const AboutUs = () => {
   return (
-    <Box margin={8} >
+    <Box margin={8} id="/#about">
       <Box display={"flex"} justifyContent={"center"}>
         <Text color={"#000000"} fontSize={"40px"} fontWeight={"500"} m={8}>
           About Us
