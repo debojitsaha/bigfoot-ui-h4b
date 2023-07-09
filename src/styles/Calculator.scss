@@ -1,0 +1,62 @@
+.input-group {
+      width: 100%;
+      position: relative;
+      border: 2px solid #9e9da3;
+      border-radius: 8px;
+      // margin: 32px;
+      font-weight: 500;
+    }
+    .input-group input, .input-group select {
+      padding: 16px 24px;
+      border: none;
+      background-color: transparent;
+      width: 100%;
+      color: #1a1a1a;
+      font-size: 16px;
+      // line-height: 24px;
+    }
+
+    .input-group:hover,
+    .input-group:focus-within {
+      border-color: #31DEC1;
+    }
+
+    .input-group input:focus,
+    .input-group select:focus,
+    .input-group:hover input,
+    .input-group:hover select {
+      color: #1a1a1a;
+    }
+
+    .input-group label {
+      position: absolute;
+      background-color: transparent;
+      padding: 16px 24px;
+      // line-height: 24px;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      color: #525252;
+      cursor: text;
+    }
+
+    .input-group:hover label {
+      color: #31DEC1;
+      font-weight: 500;
+    }
+
+    .input-group:focus-within label,
+    .input-group input:not(:placeholder-shown) ~ label,
+    .input-group select:not(:placeholder-shown) ~ label {
+      padding: 0px 8px;
+      background-color: #ffffff;
+      top: -12px;
+      left: 16px;
+      bottom: auto;
+      color: rgb(48, 48, 48);
+      transition: 0.2s ease;
+    }
+
+    :focus{
+      outline: none;
+    }
