@@ -9,7 +9,7 @@ const Homepage = () => {
     <Box p={4}>
       <Slider />
       <Calculator />
-      <Contributors />
+      {/* <Contributors /> */}
     </Box>
   )
 }

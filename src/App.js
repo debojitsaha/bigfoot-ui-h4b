@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import HomePage from "./pages/Homepage";
 import Profile from "./pages/Profile";
 import Contact from "./pages/Contact";
+import ReduceCarbonFootprint from "./pages/ReduceCarbonFootprint";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <Route index path="" element={<HomePage />} />
               <Route index path="profile" element={<Profile />} />
               <Route index path="contact" element={<Contact />} />
+              <Route index path="reducecf" element={<ReduceCarbonFootprint/>} />
             </Routes>
             {/* <Footer /> */}
           </BrowserRouter>
