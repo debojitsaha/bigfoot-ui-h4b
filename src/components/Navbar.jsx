@@ -39,7 +39,7 @@ const Navbar = () => {
           >
             Home
           </NavLink>
-          <NavLink to="about"
+          <NavLink to="/#about"
             color={"#000000"} _hover={{ color: "#26283E", borderBottom: "2px solid black" }}
             cursor={"pointer"}
           >
@@ -51,12 +51,12 @@ const Navbar = () => {
           >
             Reduce Carbon Footprint
           </NavLink>
-          <NavLink to="donate"
+          {/* <NavLink to="donate"
             color={"000000"} _hover={{ color: "#26283E", borderBottom: "2px solid black" }}
             cursor={"pointer"}
           >
             Donate
-          </NavLink>
+          </NavLink> */}
           <NavLink to="contact"
             color={"#000000"} _hover={{ color: "#26283E", borderBottom: "2px solid black" }}
             cursor={"pointer"}

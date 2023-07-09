@@ -28,7 +28,7 @@ const TaskCard = ({ data }) => {
         <Divider />
         <CardFooter>
           <ButtonGroup spacing="2" alignItems={'center'} fontWeight={500}>
-            <Button variant="solid" bgColor={"#31DEC1"}>
+            <Button variant="solid" bgColor={"#31DEC1"} color={'white'} _hover={{ bgColor: "#1aab92" }}>
               Complete
             </Button>
             <Text variant="ghost">
