@@ -11,6 +11,7 @@ const Footer = () => {
       display={"flex"}
       flexDirection={{base:"column-reverse", md:"row"}}
       bgColor={"#FBFADC"}
+      height={'60px'}      
       p={4}
       justifyContent={"space-between"}
       alignItems={"center"}

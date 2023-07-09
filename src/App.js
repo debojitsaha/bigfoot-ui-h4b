@@ -21,7 +21,7 @@ function App() {
               <Route index path="profile" element={<Profile />} />
               <Route index path="contact" element={<Contact />} />
             </Routes>
-            <Footer />
+            {/* <Footer /> */}
           </BrowserRouter>
         </ChakraProvider>
       </AppState>
