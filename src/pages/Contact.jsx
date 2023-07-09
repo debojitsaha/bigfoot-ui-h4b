@@ -34,7 +34,7 @@ const Contact = () => {
           </Text>
         </Box>
       </Box>
-      <Box w={'60%'} display={'flex'} flexDirection={'column'} gap={8} alignItems={'center'}>
+      <Box w={'60%'} display={'flex'} flexDirection={'column'} gap={8} alignItems={'end'}>
         <div className="input-group">
           <input
             type="text"
@@ -62,7 +62,7 @@ const Contact = () => {
           />
           <label htmlFor="text1">Message</label>
         </div>        
-        <Button bgColor='#27E1C1' color={'white'} width={'100px'}>Send</Button>
+        <Button bgColor='#27E1C1' color={'white'} width={'200px'} borderRadius={'30px'}>Send</Button>
       </Box>
     </Box>
   )
