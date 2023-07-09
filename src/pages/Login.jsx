@@ -36,7 +36,7 @@ const Login = () => {
           Log in
         </Button>
         <Text>
-            Already have a account? <Link> Sign Up</Link>
+            Don't have a account? <Link> Sign Up</Link>
         </Text>
       </Box>
     </Box>

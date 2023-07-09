@@ -5,10 +5,11 @@ import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/module
 import 'swiper/css'; // core Swiper
 import 'swiper/css/navigation';
 // import 'swiper/exports/scss/pagination.scss'; // Pagination module
-import { Box, Avatar, Text } from "@chakra-ui/react";
-import img_1 from "../assets/img_1.jpg";
-import img_2 from "../assets/img_2.jpg";
-import img_3 from "../assets/img_3.jpg";
+import { Box, Image, Text } from "@chakra-ui/react";
+import img_1 from "../assets/img_4.jpeg";
+import img_2 from "../assets/img_5.jpg";
+import img_3 from "../assets/img_6.jpg";
+import img_4 from "../assets/img_7.jpg";
 
 const Contributors = () => {
     return (
@@ -24,7 +25,7 @@ const Contributors = () => {
             <Box mt={4}>
                 <Swiper
                     modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-                    spaceBetween={3}
+                    spaceBetween={16}
                     slidesPerView={3}
                     pagination={{ clickable: true }}
                     //   onSwiper={(swiper) => console.log(swiper)}
@@ -32,19 +33,19 @@ const Contributors = () => {
                     autoplay={{ delay: 1000 }}
                 >
                     <SwiperSlide >
-                        <Avatar size={'4xl'} src={img_1} />
+                        <Image width={'3xl'} src={img_1} />
                     </SwiperSlide>
                     <SwiperSlide >
-                        <Avatar size={'4xl'} src={img_2} />
+                        <Image width={'3xl'} src={img_2} />
                     </SwiperSlide>
                     <SwiperSlide >
-                        <Avatar size={'4xl'} src={img_3} />
+                        <Image width={'3xl'} src={img_3} />
                     </SwiperSlide>
                     <SwiperSlide >
-                        <Avatar size={'4xl'} src={img_1} />
+                        <Image width={'3xl'} src={img_4} />
                     </SwiperSlide>
                     <SwiperSlide >
-                        <Avatar size={'4xl'} src={img_3} />
+                        <Image width={'3xl'} src={img_3} />
                     </SwiperSlide>
                 </Swiper>
             </Box>
