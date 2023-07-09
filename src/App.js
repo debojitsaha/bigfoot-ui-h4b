@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Slider from "./components/Slider";
 import Calculator from "./components/Calculator";
+import AboutUs from "./components/AboutUs";
+// import Contributors from "./components/Contributors";
 
 function App() {
   return (
@@ -14,7 +16,8 @@ function App() {
         <ChakraProvider>
         <Navbar/>
         <Slider/> 
-        <Calculator/>        
+        <Calculator/>
+        <AboutUs/>      
         <Footer/>
         </ChakraProvider>
       </AppState>
