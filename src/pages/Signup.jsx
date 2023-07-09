@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/Calculator.scss";
-import { Box, Link, Text } from "@chakra-ui/layout";
-import { Button } from "@chakra-ui/button";
+import { Box, Text, Button } from "@chakra-ui/react";
+import { NavLink } from 'react-router-dom';
 
-const Login = () => {
+const Signup = () => {
   return (
     <Box
       display={"flex"}
@@ -60,11 +60,12 @@ const Login = () => {
           Sign Up
         </Button>
         <Text>
-            Already have a account? <Link> Log in</Link>
+          Already have a account?
         </Text>
+        <NavLink to="/login">Log in</NavLink>
       </Box>
     </Box>
   );
 };
 
-export default Login;
+export default Signup;

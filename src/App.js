@@ -10,6 +10,7 @@ import Profile from "./pages/Profile";
 import Contact from "./pages/Contact";
 import ReduceCarbonFootprint from "./pages/ReduceCarbonFootprint";
 import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
@@ -19,11 +20,12 @@ function App() {
           <BrowserRouter>
             <Navbar />
             <Routes>
-              <Route index path="" element={<HomePage />} />
-              <Route index path="profile" element={<Profile />} />
-              <Route index path="contact" element={<Contact />} />
-              <Route index path="reducecf" element={<ReduceCarbonFootprint/>} />
-              <Route index path="login" element={<Login/>} />
+              <Route index path="/" element={<HomePage />} />
+              <Route path="profile" element={<Profile />} />
+              <Route path="contact" element={<Contact />} />
+              <Route path="reducecf" element={<ReduceCarbonFootprint/>} />
+              <Route path="login" element={<Login />} />
+              <Route path="signup" element={<Signup />} />
             </Routes>
             {/* <Footer /> */}
           </BrowserRouter>

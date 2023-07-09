@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Calculator.scss";
-import { Box, Link, Text } from "@chakra-ui/layout";
-import { Button } from "@chakra-ui/button";
+import { Box, Text, Button } from "@chakra-ui/react";
+import { NavLink } from 'react-router-dom'
 
 const Login = () => {
   return (
@@ -36,8 +36,9 @@ const Login = () => {
           Log in
         </Button>
         <Text>
-            Don't have a account? <Link> Sign Up</Link>
+          Don't have a account?
         </Text>
+        <NavLink to="/signup">Sign Up</NavLink>
       </Box>
     </Box>
   );
