@@ -41,7 +41,7 @@ const Donate = () => {
           color={"#FFFFFF"}
           _hover={{ bgColor: "#8F8F8F" }}
         >
-          Pay Now
+          Claim Reward
         </Button>
       </Box>
     </Box>

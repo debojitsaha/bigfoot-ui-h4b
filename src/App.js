@@ -26,7 +26,7 @@ function App() {
               <Route index path="/about" element={<AboutUs />} />
               <Route path="profile" element={<Profile />} />
               <Route path="contact" element={<Contact />} />
-              <Route path="donate" element={<Donate />} />
+              <Route path="reward" element={<Donate />} />
               <Route path="reducecf" element={<ReduceCarbonFootprint/>} />
               <Route path="login" element={<Login />} />
               <Route path="signup" element={<Signup />} />

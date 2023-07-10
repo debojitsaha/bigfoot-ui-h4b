@@ -70,11 +70,11 @@ const Navbar = () => {
           >
             Reduce Carbon Footprint
           </NavLink>
-          <NavLink to="/donate"
+          <NavLink to="/reward"
             color={"000000"} _hover={{ color: "#26283E", borderBottom: "2px solid black" }}
             cursor={"pointer"}
           >
-            Donate
+            Reward
           </NavLink>
           <NavLink
             to="/contact"
