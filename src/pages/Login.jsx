@@ -7,14 +7,17 @@ import showAlert from "../utils/showAlert";
 import { LoginUser } from "../api/userService";
 
 const Login = () => {
-  const { user, setUser } = useContext(appContext);
+  const { user, setUser, loading, setLoading } = useContext(appContext);
 
   const handleLogin = async () => {
-    console.log(user);
+    // console.log(user);
     if (user.email == "" || user.password == "") console.log("Empty Fields");
     else {
-      const res = LoginUser(user);
-      console.log("Login successful");
+      setLoading(true)
+      const res = await LoginUser(user);
+      localStorage.removeItem(authToken)
+      localStorage.setItem("authToken", res.authToken)
+      setLoading(false)
     }
   };
 
@@ -38,17 +41,17 @@ const Login = () => {
             name="email"
             id="email"
             placeholder=" "
-            onChange={(e) => setUser({ email: e.target.value })}
+            onChange={(e) => setUser({ ...user, "email": e.target.value })}
           />
           <label htmlFor="text1">Email</label>
         </div>
         <div className="input-group">
           <input
-            type="text"
+            type="password"
             name="password"
             id="password"
             placeholder=" "
-            onChange={(e) => setUser({ email: e.target.value })}
+            onChange={(e) => setUser({ ...user, "password": e.target.value })}
           />
           <label htmlFor="text1">Password</label>
         </div>
@@ -63,6 +66,7 @@ const Login = () => {
           bgColor={"#06B5A3"}
           color={"#FFFFFF"}
           _hover={{ bgColor: "#31DEC1" }}
+          isLoading={loading}
           onClick={handleLogin}
         >
           Log in
