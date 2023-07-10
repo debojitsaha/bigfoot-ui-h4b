@@ -9,7 +9,8 @@
     .input-group input, .input-group select {
       padding: 16px 24px;
       border: none;
-      background-color: transparent;
+      border-radius: 8px;
+      background-color: white;
       width: 100%;
       color: #1a1a1a;
       font-size: 15px;
@@ -30,7 +31,8 @@
 
     .input-group label {
       position: absolute;
-      background-color: transparent;
+      background-color: white;
+      border-radius: 8px;
       padding: 16px 24px;
       // line-height: 24px;
       top: 0;
