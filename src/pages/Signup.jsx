@@ -1,13 +1,14 @@
 import React, { useContext, useState } from "react";
 import "../styles/Calculator.scss";
 import { Box, Text, Button } from "@chakra-ui/react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import appContext from "../context-api/appContext";
 import { CreateUser } from "../api/userService";
 
 const Signup = () => {
   const { loading, setLoading } = useContext(appContext);
   const [createUser, setCreateUser] = useState();
+  const navigate = useNavigate();
 
   const handleRegister = async () => {
     // console.log(user);
@@ -21,9 +22,9 @@ const Signup = () => {
     else {
       setLoading(true);
       const res = await CreateUser(createUser);
-      localStorage.removeItem(authToken)
       localStorage.setItem("authToken", res.authToken);
       setLoading(false);
+      navigate("/");
     }
   };
 

@@ -1,13 +1,14 @@
 import React, { useContext } from "react";
 import "../styles/Calculator.scss";
 import { Box, Text, Button } from "@chakra-ui/react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import appContext from "../context-api/appContext";
 import showAlert from "../utils/showAlert";
 import { LoginUser } from "../api/userService";
 
 const Login = () => {
   const { user, setUser, loading, setLoading } = useContext(appContext);
+  const navigate = useNavigate();
 
   const handleLogin = async () => {
     // console.log(user);
@@ -15,9 +16,9 @@ const Login = () => {
     else {
       setLoading(true)
       const res = await LoginUser(user);
-      localStorage.removeItem(authToken)
       localStorage.setItem("authToken", res.authToken)
       setLoading(false)
+      navigate("/")
     }
   };
 
