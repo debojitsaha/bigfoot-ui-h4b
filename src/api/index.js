@@ -10,7 +10,7 @@ const api = axios.create({
 });
 
 export function authHeader() {
-  const authToken = localStorage.getItem("token");
+  const authToken = localStorage.getItem("authToken");
 
   if (authToken) {
     return {

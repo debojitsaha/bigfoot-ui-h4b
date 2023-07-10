@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   Box,
   Image,
@@ -11,10 +11,12 @@ import {
 import { NavLink, useNavigate } from "react-router-dom";
 import Logo from "../assets/logo_without_name.png";
 import { Avatar } from "@chakra-ui/react";
+import appContext from "../context-api/appContext";
 
 const Navbar = () => {
   const authToken = localStorage.getItem("authToken");
   const navigate = useNavigate();
+  const { userProfile } = useContext(appContext);
 
   const handleLogout = () => {
     localStorage.removeItem("authToken");
@@ -68,12 +70,12 @@ const Navbar = () => {
           >
             Reduce Carbon Footprint
           </NavLink>
-          {/* <NavLink to="donate"
+          <NavLink to="donate"
             color={"000000"} _hover={{ color: "#26283E", borderBottom: "2px solid black" }}
             cursor={"pointer"}
           >
             Donate
-          </NavLink> */}
+          </NavLink>
           <NavLink
             to="contact"
             color={"#000000"}
@@ -95,8 +97,9 @@ const Navbar = () => {
               >
                 {
                   <Avatar
-                    name="Dan Abrahmov"
-                    src="https://bit.ly/dan-abramov"
+                    name={userProfile?.name}
+                    src={userProfile?.image}
+                    alt={userProfile?.name}
                   />
                 }
               </MenuButton>
