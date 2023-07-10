@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 import ReduceCarbonFootprint from "./pages/ReduceCarbonFootprint";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import AboutUs from './pages/AboutUs';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Navbar />
             <Routes>
               <Route index path="/" element={<HomePage />} />
+              <Route index path="/about" element={<AboutUs />} />
               <Route path="profile" element={<Profile />} />
               <Route path="contact" element={<Contact />} />
               <Route path="reducecf" element={<ReduceCarbonFootprint/>} />

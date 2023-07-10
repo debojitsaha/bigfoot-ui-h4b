@@ -55,7 +55,7 @@ const Navbar = () => {
             Home
           </NavLink>
           <NavLink
-            to="/#about"
+            to="/about"
             color={"#000000"}
             _hover={{ color: "#26283E", borderBottom: "2px solid black" }}
             cursor={"pointer"}
@@ -63,21 +63,21 @@ const Navbar = () => {
             About Us
           </NavLink>
           <NavLink
-            to="reducecf"
+            to="/reducecf"
             color={"#000000"}
             _hover={{ color: "#26283E", borderBottom: "2px solid black" }}
             cursor={"pointer"}
           >
             Reduce Carbon Footprint
           </NavLink>
-          <NavLink to="donate"
+          <NavLink to="/donate"
             color={"000000"} _hover={{ color: "#26283E", borderBottom: "2px solid black" }}
             cursor={"pointer"}
           >
             Donate
           </NavLink>
           <NavLink
-            to="contact"
+            to="/contact"
             color={"#000000"}
             _hover={{ color: "#26283E", borderBottom: "2px solid black" }}
             cursor={"pointer"}
@@ -104,7 +104,7 @@ const Navbar = () => {
                 }
               </MenuButton>
               <MenuList>
-                <NavLink to="profile">
+                <NavLink to="/profile">
                   <MenuItem>Profile</MenuItem>
                 </NavLink>
                 <NavLink>
